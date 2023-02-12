@@ -11,3 +11,120 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5px;
+  align-items: center;
+  background-image: linear-gradient(to right, #672280, #8318da);
+  color: white;
+}
+
+.header-left {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  align-items: center;
+}
+
+.troll-face {
+  height: 30px;
+  padding-right: 5px;
+}
+
+main{
+  padding: 20px;
+}
+
+.form-input1{
+  grid-area: input1;
+  border-radius: 3px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+  padding: 5px;
+}
+
+.form-input2{
+  padding: 5px;
+  grid-area: input2;
+  border-radius: 3px;
+  border: 1px solid #D5D4D8;
+  text-indent: 5px;
+}
+
+.form-btn {
+  grid-area: btn;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #8318da 100%);
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  /* grid-column-start: 1;
+  grid-column-end: 3; */
+}
+
+.form{
+  display: grid;
+  /* grid-template-columns: auto auto; */
+  grid-template-areas:
+    'input1 input2'
+    'btn btn';
+  gap: 10px;
+}
+
+.meme{
+  width: 100%;
+  /* margin: auto; */
+  padding: 2px;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  position: relative;
+}
+
+.meme-img{
+  /* width: 500px; */
+  height: 400px;
+  /* margin: auto; */
+
+}
+
+.meme--text{
+  position: absolute;
+  text-align: center;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  /* transform: translateX(-50%); */
+  text-shadow:
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000,
+    0 2px 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+
+.top{
+  top: 0px;
+}
+
+.bottom{
+  bottom:0px
+}
